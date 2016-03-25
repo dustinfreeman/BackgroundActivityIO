@@ -1,0 +1,36 @@
+mTimestamp = MTMP
+kTimestamp = TMSP
+
+
+depthMap = DPMP
+depthMapdepthWidth = DPWD
+depthMapdepthHeight = DPHT
+depthMapcolourWidth = CLWD
+depthMapcolourHeight = CLHT
+depthMapData = DPMP
+
+Width = WDTH
+Height = HGHT
+
+depthFrame = DPTH
+depthData = DPDT
+rangeMode = RANG
+
+colourFrame = CLUR
+colourFrameImage = CLRI
+colourFrameIndex = CIND
+
+skeletonFrame = SKLF
+skeletonTrackingMode = SKTM
+floorClipPlane = FLOR
+frameNumber = FNUM 
+
+skeletonData = SKLD
+trackingID = TRID
+skeletonTrackingState = STRK
+position = POSI
+clippedEdges = CLIP
+
+joint = JONT
+jointType = JNTP
+jointTrackingState = JTRK
