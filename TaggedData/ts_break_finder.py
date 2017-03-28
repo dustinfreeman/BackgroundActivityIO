@@ -1,3 +1,5 @@
+#this file used for assessing time-continuous data quality
+
 import tags
 
 def find_ts_breaks(filepath, log_output):
