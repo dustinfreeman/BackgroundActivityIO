@@ -49,12 +49,21 @@ class TagChunk:
         self.tag = None
         self.chunkLength = 0
 
+    def __str__(self):
+        return "Tag Chunk: " + self.tag + "; byte length: " + str(self.chunkLength)
+    
+        
 class Frame(TagChunk): 
     #the time-tagged version of TagChunk
     def __init__(self):
         self.mTimestamp = None
         self.kTimestamp = None
 
+#printing is only relevant if timestamps have been read    
+#    def __str__(self):
+#        return "Frame Chunk. Tag Chunk: " + self.tag + "; byte length: " + str(self.chunkLength) +\
+#            "; machine ts: " + str(self.mTimestamp) + "; kinect ts " + str(self.kTimestamp)
+        
 
 def read_tag_metadata(file, skip_to_chunk_end = True):
     #need to decode from byte.
