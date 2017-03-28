@@ -17,7 +17,7 @@ def read_long(file):
     return long(struct.unpack('q', file.read(8))[0])
 
 
-TAG_DEFINITION_FILE = "tag_definitions.txt"
+TAG_DEFINITION_FILE = "../tag_definitions.txt"
 
 tag_definitions = []
 

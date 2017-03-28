@@ -1,5 +1,5 @@
 #this file used for assessing time-continuous data quality
-
+import sys
 import tags
 
 def find_ts_breaks(filepath, log_output):
@@ -58,5 +58,10 @@ def find_ts_breaks(filepath, log_output):
     f_out.close()
 
 if __name__ == "__main__":
-    find_ts_breaks("F:\BackgroundActivityStudy\Sept 6 2100\Chairs\capture.knt","Chairs.txt")
-    find_ts_breaks("F:\BackgroundActivityStudy\Sept 6 2100\Couch\capture.knt","Couch.txt")
+    if len(sys.argv) < 3:
+        print("usage: ts_break_finder [input .knt file] [output .txt file]")
+    else:
+        inputknt = sys.argv[1]
+        outputtxt = sys.argv[2]
+        find_ts_breaks(inputknt, outputtxt)
+    
