@@ -10,18 +10,22 @@ def showinfo(kntfilepath, verbose = False):
     
     try:
         while(True):
-            tag_chunk = tags.read_tag_metadata(f)
+            tag_chunk = tags.read_to_timestamp(f)
 
             if not tag_chunk.tag in top_level_tag_count:
                 top_level_tag_count[tag_chunk.tag] = 0
             top_level_tag_count[tag_chunk.tag] += 1
                 
             if verbose:
-                print(tag_chunk)
+                try:
+                    print(str(tag_chunk) + "\ttimestamp: " + str(tag_chunk.mTimestamp))
+                except AttributeError:
+                    print(tag_chunk)
 
             
     except Exception as e:
         #print "probably an end of file in parser"
+        #print("Parsing Exception " + str(e))
         pass
     
     print("Printing Tag Chunk Count: ")
