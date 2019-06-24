@@ -1,6 +1,6 @@
 # BackgroundActivityIO
 
-A C# wrapper for data generated as part of the [Background Activity Project]http://www.dgp.toronto.edu/~dustin/backgroundactivity/). See that page to request access to the full dataset.
+A C# wrapper for data generated as part of the [Background Activity Project](http://www.dgp.toronto.edu/~dustin/backgroundactivity/). See that page to request access to the full dataset.
 
 The Background Activity Dataset embeds hand-based gestures in the context of naturalistic, multi-person background activity in a living room-like setting. 
 
